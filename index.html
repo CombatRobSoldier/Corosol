@@ -240,7 +240,20 @@
                 font-size: 30px;
             }
             .title-bar {
-                width: 100px; /* Breite für kleine Bildschirme */
+                background-color: rgba(0, 0, 0, 0.3);
+                color: white;
+                border: none;
+                height: 100px; /* Höhe der Titel-Leiste */
+                width: 95%; /* Nimmt die volle Breite ein */
+                position: fixed; /* Positioniert die Leiste relativ */
+                top: 150px; /* Setzt die Leiste an den oberen Rand */
+                left: 1.75%;
+                border-radius: 5px;
+                display: flex; /* Flexbox für die Anordnung */
+                z-index: 1000; /* Stellt sicher, dass die Leiste über anderen Inhalten liegt */
+                justify-content: space-between; /* Verteilung der Elemente */
+                align-items: center; /* Zentriert die Buttons vertikal */
+                padding: 0 20px; /* Innenabstand */
             }
             h2 {
                 font-size: 20px;
