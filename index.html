@@ -239,6 +239,29 @@
                 top: 1.9%; /* Passe den Abstand an, wie gewünscht */
                 font-size: 30px;
             }
+
+            .overlay-image {
+                position: absolute;
+                top: 22px;
+                left: 25px;
+                width: 60px; /* Bild nimmt die volle Breite ein */
+                height: 60px; /* Bild nimmt die volle Höhe ein */
+                border-radius: 10px;
+                object-fit: cover; /* Bild bleibt proportional */
+                z-index: 0; /* Bild hinter dem Button */
+                opacity: 0.8; /* Optional: Transparenz für das Bild */
+            }
+    
+            .left-rob-image {
+                position: absolute;
+                top: -10px;
+                left: 58%;
+                width: 115px; /* Bild nimmt die volle Breite ein */
+                height: 145px; /* Bild nimmt die volle Höhe ein */
+                border-radius: 10px;
+                object-fit: cover; /* Bild bleibt proportional */
+
+            }
             .title-bar {
                 background-color: rgba(0, 0, 0, 0.3);
                 color: white;
