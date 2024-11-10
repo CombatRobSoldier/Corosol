@@ -16,7 +16,7 @@
             background-color: rgba(0, 0, 0, 0.6); /* Schwarz mit 40% Transparenz */
             height: 10%; /* Höhe der Navigationsleiste */
             width: 100%; /* Nimmt die volle Breite ein */
-            position: fixed; /* Fixiert die Leiste oben */
+            position: fixed; /* fixiert die Leiste oben */
             top: 0; /* Setzt die Leiste an den oberen Rand */
             left: 0; /* Setzt die Leiste an den linken Rand */
             z-index: 1000; /* Stellt sicher, dass die Leiste über anderen Inhalten liegt */
@@ -43,84 +43,86 @@
         }
 
         h2 {
-            font-size: 200%;
+            font-size: 150%;
             text-align: center;
             position: absolute; /* Position absolut, um über dem Banner zu erscheinen */
             top: 0.9%; /* Passe den Abstand an, wie gewünscht */
             left: 0;
             right: 0;
-            z-index: 1; /* Höherer Z-Index als das Banner */
-        }
-
-        .title {
-            font-size: 10px; /* Stelle die gewünschte Schriftgröße ein */
-            margin-left: 0px; /* Abstand von der linken Seite */
-            height: 10px
-        }
+            z-index: 1; /* Höherer Z-Index als das Banner */}
 
         .title-bar {
             background-color: rgba(0, 0, 0, 0.3);
             color: white;
             border: none;
-            height: 100px; /* Höhe der Titel-Leiste */
+            height: 7%; /* Höhe der Titel-Leiste */
             width: 95%; /* Nimmt die volle Breite ein */
-            position: fixed; /* Positioniert die Leiste relativ */
+            position: fixed; /* positioniert die Leiste relativ */
             top: 12%; /* Setzt die Leiste an den oberen Rand */
-            left: 1.75%;
-            border-radius: 5px;
+            left: 2.5%;
+            border-radius: 15px;
             display: flex; /* Flexbox für die Anordnung */
             z-index: 1000; /* Stellt sicher, dass die Leiste über anderen Inhalten liegt */
             justify-content: space-between; /* Verteilung der Elemente */
-            align-items: center; /* Zentriert die Buttons vertikal */
-            padding: 0 20px; /* Innenabstand */
-        }
+            align-items: center; /* zentriert die Buttons vertikal */
+            padding: 0 0.1%; /* Innenabstand */}
 
         .title-button,
         .title-button-register,
         .title-button-login,
         .title-button-support {
-            height: 80px;
-            width: 150px;
-            border-radius: 20px;
+            border-radius: 5px;
             cursor: pointer;
-            font-weight: bold;
-            font-size: 25px;
+            font-size: 2em; /* Schriftgröße erhöhen */
+            padding: 3% 3%; /* Innenabstand erhöhen (mehr Platz im Button) */
+            width: auto; /* Optional: Wenn du eine feste Breite möchtest, kannst du hier einen Wert angeben */
+            height: auto; /* Höhe des Buttons anpassen */
             transition: color 0.15s, background-color 0.15s;
-            z-index: 2; /* Button über der Title-Bar */
-        }
+            z-index: 2; /* Button über der Title-Bar */}
+
 
         .title-button {
             background-color: rgba(0, 0, 0, 0);
             color: white;
             border: none;
-            font-size: 20px; /* Schriftgröße */
-        }
+            font-size: 1.7em; /* Schriftgröße */}
 
         .title-button-register {
             background-color: rgba(128, 0, 0, 0.3);
             color: white;
             border: none;
-            font-size: 25px; /* Schriftgröße */
+            font-size: 2em; /* Schriftgröße erhöhen */
+            padding: 3% 3%; /* Innenabstand erhöhen (mehr Platz im Button) */
+            width: auto; /* Optional: Wenn du eine feste Breite möchtest, kannst du hier einen Wert angeben */
+            height: auto; /* Höhe des Buttons anpassen */
+            border-radius: 5px; /* Optional: Wenn du die Ecken abgerundet haben möchtest */
         }
 
         .title-button-login {
             background-color: rgba(189, 163, 9, 0.1);
             color: white;
             border: none;
-            font-size: 25px; /* Schriftgröße */
+            font-size: 2em; /* Schriftgröße erhöhen */
+            padding: 3% 3%; /* Innenabstand erhöhen (mehr Platz im Button) */
+            width: auto; /* Optional: Wenn du eine feste Breite möchtest, kannst du hier einen Wert angeben */
+            height: auto; /* Höhe des Buttons anpassen */
+            border-radius: 5px; /* Optional: Wenn du die Ecken abgerundet haben möchtest */
         }
 
         .title-button-support {
             background-color: rgba(13, 68, 30, 0.1);
             color: white;
             border: none;
-            font-size: 25px; /* Schriftgröße */
+            font-size: 2em; /* Schriftgröße erhöhen */
+            padding: 3# #% 3%; /* Innenabstand erhöhen (mehr Platz im Button) */
+            width: auto; /* Optional: Wenn du eine feste Breite möchtest, kannst du hier einen Wert angeben */
+            height: auto; /* Höhe des Buttons anpassen */
+            border-radius: 5px; /* Optional: Wenn du die Ecken abgerundet haben möchtest */
         }
 
         .title-button:hover,
         .title-button-register:hover,
-        .title-button-login:hover,
-        .title-button-support:hover {
+        .title-button-login:hover, title-button-support:hover {
             background-color: rgba(255, 255, 255, 0.3);
         }
 
@@ -130,10 +132,10 @@
 
         .overlay-image {
             position: absolute;
-            top: 22px;
-            left: 25px;
-            width: 60px;
-            height: 60px;
+            top: 10%;
+            left: 0.5%;
+            width: 3%;
+            height: 80%;
             border-radius: 10px;
             object-fit: cover;
             z-index: 0;
@@ -214,15 +216,15 @@
         .left-buttons,
         .right-buttons {
             display: flex;
-            gap: 10px;
+            gap: 1%;
         }
 
         .left-buttons {
-            margin-left: 80px;
+            margin-left: 4.5%;
         }
 
         .right-buttons {
-            margin-right: 50px;
+            margin-right: 4%;
         }
 
         @media (max-width: 768px) {
@@ -298,7 +300,6 @@
         <div class="left-buttons">
             <button class="title-button" onclick="location.href='news.html';">News</button>
             <button class="title-button" onclick="location.href='download.html';">Download</button>
-            <button class="title-button" onclick="location.href='development.html';">Development</button>
             <button class="title-button" onclick="location.href='community.html';">Community</button>
             <button class="title-button" onclick="location.href='shop.html';">Shop</button>
         </div>
